@@ -46,6 +46,8 @@
 }
 @media only screen and (max-width: 600px) {
   .buy-bg{
-    background-position: top center;
+    background-position: bottom;
+    background-size: 175% 82%;
+    /* background-size: 100% 80%; */
   }
 }

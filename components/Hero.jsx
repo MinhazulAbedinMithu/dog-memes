@@ -8,14 +8,14 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className={`hero-bg w-full min-h-[100vh] h-full relative bg-cover bg-[70%] md:bg-bottom`}>
+    <div className={`hero-bg w-full min-h-[100vh] h-full relative bg-cover bg-[72%] md:bg-bottom`}>
 
-        <Link href={""}  className='absolute top-2 left-4'>
-            <Image src={imgChase} alt='Chase' className='max-w-[450px] w-full' />
+        <Link href={""}  className='absolute top-2 left-12 md:left-4'>
+            <Image src={imgChase} alt='Chase' className='max-w-[280px] md:max-w-[450px] w-full' />
         </Link>
 
-        <Link href={""}  className='absolute top-[19%] md:top-2 right-[23%] md:right-4'>
-            <Image src={imgBuy} alt='Buy img' className='w-[200px] md:w-[250px]' />
+        <Link href={""}  className='absolute top-[20%] md:top-2 right-[23%] md:right-4'>
+            <Image src={imgBuy} alt='Buy img' className='w-[160px] md:w-[250px]' />
         </Link>
 
         <Link href="" className='absolute top-[55%] translate-y-[-45%] right-4'>
