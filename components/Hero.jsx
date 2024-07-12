@@ -4,8 +4,13 @@ import imgBuy from "@/public/hero-buy.png"
 import imgChase from "@/public/hero-chase.png"
 import Image from 'next/image';
 import Link from 'next/link';
+import imgTwitter from "@/public/twitter.png"
+import imgTelegram from "@/public/telegram.png"
+import imgDexscreener from "@/public/dexscreener.svg"
+import imgDextools from "@/public/dextools.png"
 
 const Hero = () => {
+  const link = ""
   return (
     <div className={`hero-bg w-full min-h-[100vh] h-full relative bg-cover bg-[72%] md:bg-bottom`}>
 
@@ -17,9 +22,23 @@ const Hero = () => {
             <Image src={imgBuy} alt='Buy img' className='w-[160px] md:w-[250px]' />
         </Link>
 
-        <Link href="" className='absolute top-[55%] translate-y-[-45%] right-4'>
+        {/* <Link href="" className='absolute top-[55%] translate-y-[-45%] right-4'>
             <Image src={imgSocial} alt='Social Icons' className='w-[100px] md:w-auto' />
-        </Link>
+        </Link> */}
+        <div className='absolute top-[55%] translate-y-[-45%] right-4 flex items-center justify-center gap-3 flex-col blue-bg px-2 py-4 rounded-full shadow-xl drop-shadow-xl border-4 border-black'>
+          <Link href={link}>
+              <Image src={imgTwitter} alt='twitter' className='w-10'/>
+          </Link>
+          <Link href={link}>
+              <Image src={imgTelegram} alt='telegram' className='w-12'/>
+          </Link>
+          <Link href={link}>
+              <Image src={imgDexscreener} alt='dexscreener' className='w-10'/>
+          </Link>
+          <Link href={link}>
+              <Image src={imgDextools} alt='dextools' className='w-14'/>
+          </Link>
+        </div>
         
     </div>
   )
