@@ -1,5 +1,4 @@
 import React from 'react';
-import imgBg from "@/public/bg.png"
 import imgSocial from "@/public/IMG_social.png"
 import imgBuy from "@/public/hero-buy.png"
 import imgChase from "@/public/hero-chase.png"
