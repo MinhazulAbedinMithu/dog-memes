@@ -2,32 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.blue-bg{
+  background-color: #2157C7;
+}
+.hero-bg{
+  background-image: url("/hero-bg.png");
+  /* background: url("/hero-bg.png") bottom center no-repeat; */
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.token-1{
+  background: url("/token-1.png") center bottom no-repeat;
+  background-size: contain;
+}
+.token-2{
+  background: url("/token-2.png") center bottom no-repeat;
+  background-size: contain;
+}
+.token-3{
+  background: url("/token-3.png") center bottom no-repeat;
+  background-size: contain;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.token-1, .token-2, .token-3{
+  min-height: 380px;
+  height: 100%;
+  position: relative;
+}
+.token-1 h4, .token-2 h4, .token-3 h4{
+  position: absolute;
+  bottom: 17%;
+  font-size: 28px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.buy-bg{
+  background: url("/buy-section-bg.png") bottom center no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .buy-bg{
+    background-position: top center;
   }
 }
