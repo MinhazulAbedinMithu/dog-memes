@@ -1,9 +1,14 @@
 import React from 'react'
 import imgTitle from "@/public/tokenomics.png"
 import Image from 'next/image'
+import localFont from "next/font/local";
 // import imgToken1 from "@/public/token-1.png";
 // import imgToken2 from "@/public/token-2.png";
 // import imgToken3 from "@/public/token-3.png";
+const myFont = localFont({
+    src: '../public/ROMALIKA.otf',
+    variable: "--font-my"
+  })
 
 const tokenomicsData = [
     {
@@ -39,13 +44,13 @@ const Tokenomics = () => {
             } */}
 
             <div className='token-1'>
-                <h4 >1B supply</h4>
+                <h4 className={`${myFont.className}`}>1B supply</h4>
             </div>
             <div className='token-2'>
-                <h4>0% tax</h4>
+                <h4 className={`${myFont.className}`}>0% tax</h4>
             </div>
-            <div className='token-3'>
-                <h4>1ERC20</h4>
+            <div className='token-3 '>
+                <h4 className={`${myFont.className}`}>1ERC20</h4>
             </div>
         </div>
     </div>
