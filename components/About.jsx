@@ -15,19 +15,15 @@ const About = () => {
             <Image src={imgAbout} alt='About' className='max-w-[350px] w-full'/>
         </div>
         <div className='max-w-[700px] w-full mx-auto rounded-lg shadow-lg drop-shadow-md bg-gray-300/25 p-6 text-white'>
-            <h2 className='text-3xl pb-4 font-bold'>Welcome to <span className={`${myFont.className}`}>$CHASE ON EACH</span></h2>
-            <p className='text-lg'>
-            Wandy is the ex of the famous Andy. They broke up a while ago and they share a scandal about Andy ⚠️
-            <br />
+            <h2 className='text-3xl pb-4 font-bold'>Welcome to <span className={`${myFont.className}`}>Chase on ETH</span>, Where we unleash mayhem and keep you safe on Web3 🐶 </h2>
+            <p className='py-2 text-lg'>Forget the dull stuff, Chase is on a wild ride through the ETH Chain, sniffing out scams and shady deals! We&apos;re here to give bad actors a paw pounding with our rad contract address scanner. Think of Chase as your crypto watchdog with a knack for catching sketchy stuff.</p>
+            
+            <p className='text-lg font-medium'>How we roll:</p>
+            <p className='text-lg'>🐶 Scan: Our watchdog sniffs out dodgy contracts and BS transactions.</p>
+            <p className='text-lg'>🐶 Alert: Get heads-ups on what&apos;s hot and what&apos;s not.</p>
+            <p className='text-lg'>🐶 Protect: Keep your wallet safe and sound from the wilds on Web3</p>
 
-            Wandy cheated with Brett, because he has a higher marketcap and a stronger position then Andy.
-            <br />
-
-            Wandy is now a fulfilled woman and is ready to conquer the meme world of crypto, all the biggest memes in the crypto space are whistling at her when she walks by 👀
-            <br />
-
-            Be ready, because $WANDY is the hottest chick in town right now! Are you ready to meet her?
-            </p>
+            <p className='pt-2 text-lg'>Ready to roll with Chase? Jump into the memecoin madness, flex our tools, and join the fight to clean up Web3!</p>
         </div>
     </div>
   )
